@@ -1,5 +1,8 @@
 #+ endpoint: http://dbpedia.org/sparql
 
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
 SELECT DISTINCT  ?o
 WHERE {
 {
