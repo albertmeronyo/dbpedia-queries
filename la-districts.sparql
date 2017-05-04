@@ -1,0 +1,10 @@
+#+ endpoint: http://dbpedia.org/sparql
+
+SELECT DISTINCT  ?o
+WHERE {
+{
+?o dbp:settlementType <http://dbpedia.org/resource/List_of_districts_and_neighborhoods_of_Los_Angeles>
+} UNION {
+?o dbo:type <http://dbpedia.org/resource/List_of_districts_and_neighborhoods_of_Los_Angeles>
+}
+} ORDER BY ?o
